@@ -18,4 +18,4 @@ for a in soup.findAll('a',href=True, attrs={'class':'_31qSD5'}):
     prices.append(price.text)
   
 df = pd.DataFrame({'Product Name':laptopName,'Price':prices}) 
-df.to_csv('testyyyyyyyyyyy.csv', index=False, encoding='utf-8')
+df.to_csv('Products.csv', index=False, encoding='utf-8')

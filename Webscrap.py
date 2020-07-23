@@ -2,8 +2,6 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import pandas as pd
 
-
-
 laptopName=[] 
 prices=[] 
 
@@ -12,7 +10,6 @@ driver.get("https://www.flipkart.com/televisions/pr?sid=ckf%2Cczl&p%5B%5D=facets
 content = driver.page_source
 
 soup = BeautifulSoup(content, 'html.parser')
-
 for a in soup.findAll('a',href=True, attrs={'class':'_31qSD5'}):
     name=a.find('div', attrs={'class':'_31qSD5'})
     price=a.find('div', attrs={'class':'_1vC4OE _2rQ-NK'})

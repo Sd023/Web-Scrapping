@@ -23,3 +23,5 @@ for a in soup.findAll('a',href=True, attrs={'class':'_31qSD5'}): ##finding all t
   
 df = pd.DataFrame({'Product Name':productName,'Price':productPrice}) ##creating a DataFrame to store the data 
 df.to_csv('Products.csv', index=False, encoding='utf-8')##Storing the data in CSV format
+
+##OpenToChanges
